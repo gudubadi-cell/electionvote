@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>🗳️ Electronic Voting System</h1>
+        <div class="login-buttons">
+            <button class="login-btn admin-btn" onclick="window.location.href='admin.html'">
+                👨‍💼 Admin Login
+            </button>
+            <button class="login-btn user-btn" onclick="window.location.href='user.html'" id="userLoginBtn">
+                👤 Voter Login
+            </button>
+        </div>
+        <p id="votingStatus">Voting is currently <span id="statusText">INACTIVE</span></p>
+    </div>
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
